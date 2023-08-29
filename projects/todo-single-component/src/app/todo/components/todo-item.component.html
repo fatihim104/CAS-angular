@@ -1,0 +1,6 @@
+<mat-list-item *ngFor="let item of items">
+    <div>
+        <mat-checkbox [ngModel]="item.checked" (ngModelChange)="onChecked($event, item)">{{item.description}}</mat-checkbox>
+        <span class="modified-date"> {{item.lastModified | date}} </span>
+    </div>
+</mat-list-item>

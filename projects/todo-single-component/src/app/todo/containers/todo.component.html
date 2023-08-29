@@ -1,0 +1,9 @@
+<div class="content" fxLayout="column" fxLayoutGap="25px">
+    <h1>Todo example</h1>
+    <h2>NOT Single Component</h2>
+
+    <todo-add (added)="onAdd($event)" [nextId]="allItems.length" ></todo-add>
+
+    <todo-view [items]="allItems"  (resetTodos)="onReset()"></todo-view>
+
+</div>
